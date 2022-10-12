@@ -1,4 +1,5 @@
-﻿string text = " -  Я думаю, - сказал князь, улыбаясь, - что,"
+﻿// замена символов строки
+string text = " -  Я думаю, - сказал князь, улыбаясь, - что,"
             + "ежели бы вас послали вместо нашего милого Винценгороде,"
             + "вы бы взяли приступом согласие прусского короля";
 
@@ -13,5 +14,11 @@ string Riplace(string text, char oldValue, char newValue)
     }
     return result;
 }
-string newText = Riplace(text,' ', '$');
+
+
+string newText = Riplace(text,' ', '|');
+string newText2 = Riplace(text,'к', 'К');
+string newText3 = Riplace(text,'с', 'С');
 System.Console.WriteLine(newText);
+System.Console.WriteLine(newText2);
+System.Console.WriteLine(newText3);
